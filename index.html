@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Teste Michel</title>
+    <meta name="keywords" content="Teste Js"/>
+    <meta name="description" content="Teste Js">
+    <meta name="author" content="MK">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/segment.css">
+</head>
+<body>
+
+<p class="title">QUAL É O NÚMERO?</p>
+<hr class="custom-hr">
+
+<div class="result-container">
+    <p class="message" id="message"></p>
+    <div class="row">
+        <div id="digit3" class="digit">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+        </div>
+        <div id="digit2" class="digit">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+        </div>
+        <div id="digit1" class="digit">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+        </div>
+    </div>
+    <button class="play-again-button" id="play-again">
+        <img class="refresh-icon" src="assets/images/refresh.png" alt="refresh" />
+        NOVA PARTIDA
+    </button>
+</div>
+
+<div class="row">
+    <div class="column">
+        <input name="guess-input" id="guess-input" value="" placeholder="Digite o palpite"/>
+    </div>
+    <div class="column">
+        <button class="submit-button" id="run-game">ENVIAR</button>
+    </div>
+</div>
+
+<script type="module" src="components/scoreboard.js"></script>
+<script src="assets/js/mask.js"></script>
+
+</body>
+</html>
